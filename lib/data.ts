@@ -744,36 +744,24 @@ const data: Data = {
   ],
   carousels: [
     {
-      title: 'Farm-Fresh Goodness Delivered to Your Doorstep!',
-
+      title: 'Most Popular Shoes For Sale',
       buttonCaption: 'Shop Now',
-
-      image: '/images/banner1.jpg',
-
-      url: '/search?category=Condiments & Sauces',
-
-      isPublished: true,
-    },
-    {
-      title: 'Tasty Treats, Anytime! ',
-
-      buttonCaption: 'Shop Now',
-
-      image: '/images/banner2.jpg',
-
-      url: '/search?category=Beverages',
-
-      isPublished: true,
-    },
-    {
-      title: 'From Bold to Natural – We’ve Got Your Perfect Shade!',
-
-      buttonCaption: 'See More',
-
       image: '/images/banner3.jpg',
-
-      url: '/search?category=Dairy',
-
+      url: '/search?category=Shoes',
+      isPublished: true,
+    },
+    {
+      title: 'Best Sellers in T-Shirts',
+      buttonCaption: 'Shop Now',
+      image: '/images/banner1.jpg',
+      url: '/search?category=T-Shirts',
+      isPublished: true,
+    },
+    {
+      title: 'Best Deals on Wrist Watches',
+      buttonCaption: 'See More',
+      image: '/images/banner2.jpg',
+      url: '/search?category=Wrist Watches',
       isPublished: true,
     },
   ],
