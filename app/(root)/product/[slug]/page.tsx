@@ -34,9 +34,6 @@ export default async function ProductDetails(props: {
   const searchParams = await props.searchParams
 
   const { page, color, size } = searchParams
-
-  const params = await props.params
-
   const { slug } = params
 
   const product = await getProductBySlug(slug)
