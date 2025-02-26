@@ -12,7 +12,8 @@ export const formatNumberWithDecimal = (num: number): string => {
 
 // PROMPT: [ChatGPT] create toSlug ts arrow function that converts text to lowercase,
 // removes non-word, non-whitespace, non-hyphen characters, replaces whitespace,
-// trims leading hyphens, and trims trailing hyphens
+// trims leading hyphens, and trims trailing hyphens.
+// Also replace repeated hypens in middile with single hypen
 
 export const toSlug = (text: string): string =>
   text
@@ -20,6 +21,7 @@ export const toSlug = (text: string): string =>
     .replace(/[^\w\s-]+/g, '')
     .replace(/\s+/g, '-')
     .replace(/^-+|-+$/g, '')
+    .replace(/-+/g, '-')
 
 const CURRENCY_FORMATTER = new Intl.NumberFormat('en-US', {
   currency: 'USD',
